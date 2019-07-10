@@ -11,9 +11,8 @@ $ composer install zh-mead/laravel-admin-ext-echarts
 $ php artisan vendor:publish --provider=ZhMead\ECharts\EChartsServiceProvider
 ~~~
 
-## 使用
+## 使用说明
 
-* 用法
 ~~~php
 ECharts::content(参数一,参数二,参数三,参数四);
 ~~~
@@ -24,6 +23,8 @@ ECharts::content(参数一,参数二,参数三,参数四);
 | 参数二 | 数组 | 必填 | [] | 配置项 |
 | 参数一 | 数字 | 否必填 | false(100%) | 宽(px) |
 | 参数一 | 数字 | 否必填 | 500 | 高（px） |
+
+## 案例
 
 * 方式一
 ~~~php
