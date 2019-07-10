@@ -1,0 +1,33 @@
+{
+    "name": "zh-mead/laravel-admin-echarts",
+    "description": "laravel-admin-echarts",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension", 'echarts'],
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Mead",
+            "email": "751066209@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZhMead\\ECharts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ZhMead\\ECharts\\EChartsServiceProvider"
+            ]
+        }
+    }
+}

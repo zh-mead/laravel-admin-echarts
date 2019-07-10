@@ -1,0 +1,70 @@
+# laravel-admin-ext\echarts 图表
+======
+## 安装
+* 安装依赖包
+~~~bash
+$ composer install zh-mead/laravel-admin-ext-echarts
+~~~
+
+* 发布文件
+~~~bash
+$ php artisan vendor:publish --provider=ZhMead\ECharts\EChartsServiceProvider
+~~~
+
+## 使用
+
+* 用法
+~~~php
+ECharts::content(参数一,参数二,参数三,参数四);
+~~~
+
+| 位置 | 类型 | 是否必填 | 默认值 | 名称 | 
+| ------- | -------- | -------- | --------- | -------- |
+| 参数一 | 字符串（唯一） | 必填 | NULL | 唯一标识 |
+| 参数二 | 数组 | 必填 | [] | 配置项 |
+| 参数一 | 数字 | 否必填 | false(100%) | 宽(px) |
+| 参数一 | 数字 | 否必填 | 500 | 高（px） |
+
+* 方式一
+~~~php
+new Box('方式一', ECharts::content('index', [
+    'tooltip' => [
+        'trigger' => 'axis'
+    ],
+    'xAxis' => [
+        'type' => 'category',
+        'data' => ['星期一','星期二','星期三','星期四','星期五','星期六','星期日'],
+    ],
+    'yAxis' => [
+        'type' => 'value',
+    ],
+    'series' => [
+        [
+            'data' => [100,200,300,200,100,150,80],
+            'type' => 'line'
+        ]
+    ]
+]))
+~~~
+
+* 方式二
+~~~php
+$options = <<<EOP
+ {
+    xAxis: {
+        type: 'category',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: 'line'
+    }]
+}
+EOP;
+......
+new Box('方式一', ECharts::content('index', $options))
+~~~
+
