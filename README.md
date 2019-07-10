@@ -1,6 +1,7 @@
-# laravel-admin-ext\echarts 图表
-======
+# laravel-admin-echarts 图表
+> 本项目是 Laravel-Admin 的扩展插件，主要是集成*百度 EChaert 图表*
 ## 安装
+
 * 安装依赖包
 ~~~bash
 $ composer install zh-mead/laravel-admin-ext-echarts
