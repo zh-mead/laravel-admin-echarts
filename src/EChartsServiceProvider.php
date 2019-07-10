@@ -27,6 +27,10 @@ class EChartsServiceProvider extends ServiceProvider
             );
         }
 
+        $this->app->booted(function () {
+            ECharts::routes(__DIR__ . '/../routes/web.php');
+        });
+
         Admin::booting(function () {
             Admin::js('vendor/laravel-admin-ext/echarts/echarts.min.js');
         });

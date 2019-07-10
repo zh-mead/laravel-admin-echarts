@@ -4,7 +4,7 @@
 
 * 安装依赖包
 ~~~bash
-$ composer install zh-mead/laravel-admin-ext-echarts
+$ composer install zh-mead/laravel-admin-echarts
 ~~~
 
 * 发布文件
@@ -69,4 +69,6 @@ EOP;
 ......
 new Box('方式一', ECharts::content('index', $options))
 ~~~
+
+> 我已经创建好一个案例，你可以访问http://XXx/admin/echarts
 

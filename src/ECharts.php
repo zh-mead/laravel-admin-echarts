@@ -22,7 +22,7 @@ class ECharts extends Extension
 		<div id="{$time}" style="width: {$width};height:{$height};">加载中....</div>
 EOF;
 
-        return view('echarts::index', ['chart' => $time, 'chart_html' => $html, 'options' => $options]);
+        return view('echarts::echarts', ['chart' => $time, 'chart_html' => $html, 'options' => $options]);
     }
 }
 
