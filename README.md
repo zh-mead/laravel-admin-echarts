@@ -4,7 +4,7 @@
 
 * 安装依赖包
 ~~~bash
-$ composer install zh-mead/laravel-admin-echarts
+$ composer require zh-mead/laravel-admin-echarts
 ~~~
 
 * 发布文件
