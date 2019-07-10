@@ -2,7 +2,7 @@
     "name": "zh-mead/laravel-admin-echarts",
     "description": "laravel-admin-echarts",
     "type": "library",
-    "keywords": ["laravel-admin", "extension", 'echarts'],
+    "keywords": ["laravel-admin", "extension", "echarts"],
     "license": "MIT",
     "version": "1.0.0",
     "authors": [
